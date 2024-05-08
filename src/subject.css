@@ -1,0 +1,104 @@
+/* General styles */
+.dashboard {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.Top-quiz, .quiz-sec {
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid red; /* Debugging border */
+}
+
+.dropdown button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown button:hover {
+  background-color: #367c39;
+}
+
+.dropdown-content {
+  display: none; /* Ensure this is toggled by JavaScript */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100; /* Higher z-index to ensure it's on top */
+  border: 1px solid blue; /* Debugging border */
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: none;
+  background: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content.nested {
+  left: 100%; /* Adjust as needed */
+  top: 0;
+  border: 1px solid green; /* Debugging border */
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Quiz section styles */
+.quiz-sec h1 {
+  color: #4CAF50;
+}
+
+.quiz-sec ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-sec ul li {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
